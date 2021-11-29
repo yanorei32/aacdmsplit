@@ -21,6 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Test
+        run: |
+          pwd.exe
+
       - name: Build
         run: |
           git clone https://github.com/knik0/faad2 --depth 1 --branch 2_8_8 faad2-2.8.8
