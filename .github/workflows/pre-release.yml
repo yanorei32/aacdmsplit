@@ -21,13 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Test
-        run: |
-          pwd.exe
-
       - name: Build
         run: |
-          pwd
+          cd /cygdrive/d/a/aacdmsplit/aacdmsplit
+          ls -lah
           git clone https://github.com/knik0/faad2 --depth 1 --branch 2_8_8 faad2-2.8.8
           patch -p1 -d faad2-2.8.8 < ./faad2.patch
           cd faad2-2.8.8
