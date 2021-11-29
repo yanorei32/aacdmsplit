@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - master
+      - add-ci-script
 
 jobs:
   actionlint:
